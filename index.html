@@ -1,0 +1,167 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Drum Studio | 부산 동래 드럼 레슨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap');
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #F5F5DC; color: #4E342E; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?auto=format&fit=crop&q=80&w=1920'); background-size: cover; background-position: center; }
+        .btn-brown { background-color: #4E342E; color: #F5F5DC; transition: 0.3s; }
+        .btn-brown:hover { background-color: #8D6E63; }
+        .section-padding { padding: 80px 20px; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Header & Navigation -->
+    <header class="fixed w-full z-50 bg-[#F5F5DC]/90 backdrop-blur-md border-b border-brown-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-tighter">Danny Drum Studio</h1>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-amber-800">소개</a>
+                <a href="#program" class="hover:text-amber-800">레슨</a>
+                <a href="#facility" class="hover:text-amber-800">시설</a>
+                <a href="#contact" class="hover:text-amber-800">오시는 길</a>
+            </nav>
+            <a href="https://open.kakao.com/o/st0Tf5sg" class="btn-brown px-5 py-2 rounded-full text-sm">상담하기</a>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="hero-bg h-screen flex flex-col justify-center items-center text-center text-white">
+        <div class="animate-fade-in-up">
+            <p class="text-xl mb-4 font-light italic">"Where your heartbeat becomes music"</p>
+            <h2 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">나만의 리듬<br>나만의 음악</h2>
+            <p class="text-lg md:text-xl mb-8 opacity-90">나만을 위한 비트, Danny Drum Studio</p>
+            <div class="flex space-x-4 justify-center">
+                <a href="#contact" class="btn-brown px-8 py-4 rounded-md text-lg font-bold">10% 할인 혜택받기</a>
+                <a href="#program" class="bg-white/20 border border-white px-8 py-4 rounded-md text-lg font-bold hover:bg-white/40">무료 체험 신청</a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 animate-bounce text-2xl"><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about" class="section-padding max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <img src="https://img.kr.gcp-karroter.net/business-profile/bizPlatform/profile/30540534/1766386425109/RklMRV9LSVRfMTc0NjI5OTA0OTIwOTM1MjI=.jpeg?q=95&s=1440x1440&t=inside" alt="Danny 원장" class="rounded-2xl shadow-2xl w-full object-cover aspect-[3/4]">
+        </div>
+        <div>
+            <span class="text-amber-800 font-bold tracking-widest uppercase">Professional Danny 쌤과 함께</span>
+            <h3 class="text-4xl font-bold mt-2 mb-6 text-[#4E342E]">드럼이 즐거워지는<br>가장 확실한 곳</h3>
+            <p class="text-lg mb-6 leading-relaxed opacity-80">
+                악보를 몰라도 괜찮습니다.<br>
+                국내외 다양한 경험과 1:1 맞춤형 커리큘럼을 가진 Danny 쌤을 통해,<br>
+                나만의 특별한 리듬을 완성할 수 있습니다.
+            </p>
+            <ul class="space-y-3 mb-8">
+                <li><i class="fas fa-check-circle text-amber-700 mr-2"></i> 실용음악 석사 및 국내외 다수 세션 활동 Danny 쌤</li>
+                <li><i class="fas fa-check-circle text-amber-700 mr-2"></i> 개인별 취향에 맞는 곡 선정 & 맞춤형 교재</li>
+                <li><i class="fas fa-check-circle text-amber-700 mr-2"></i> PT형 횟수 차감제로 자유로운 스케쥴링 가능</li>
+            </ul>
+            <div class="flex space-x-4">
+                <a href="http://www.youtube.com/@dan1stdmr" class="text-3xl text-red-600 hover:scale-110 transition"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/dan1stdmr" class="text-3xl text-pink-600 hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
+                <a href="https://blog.naver.com/dannydrumstudio" class="text-3xl text-green-600 hover:scale-110 transition"><i class="fas fa-blog"></i></a>
+ <a href="https://open.kakao.com/o/st0Tf5sg" class="text-2xl hover:text-amber-800"><i class="fas fa-comment"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Program Section -->
+    <section id="program" class="section-padding bg-white/50">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-16">Customized Lessons</h3>
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- 취미반 -->
+                <div class="card p-8">
+                    <div class="text-4xl mb-4 text-amber-800"><i class="fas fa-music"></i></div>
+                    <h4 class="text-xl font-bold mb-3">취미반</h4>
+                    <p class="text-sm opacity-70 mb-6">성인, 직장인, 학생 맞춤<br>스트레스 해소와 재미 중심</p>
+                    <button onclick="location.href='#contact'" class="text-amber-800 font-bold">문의하기 <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <!-- CCM반 -->
+                <div class="card p-8 border-2 border-amber-800/30">
+                    <div class="text-4xl mb-4 text-amber-800"><i class="fas fa-church"></i></div>
+                    <h4 class="text-xl font-bold mb-3">CCM/워십반</h4>
+                    <p class="text-sm opacity-70 mb-6">교회 반주 특화 커리큘럼<br>실전 필인과 앙상블 마스터</p>
+                    <button onclick="location.href='#contact'" class="text-amber-800 font-bold">문의하기 <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <!-- 밴드반 -->
+                <div class="card p-8">
+                    <div class="text-4xl mb-4 text-amber-800"><i class="fas fa-users"></i></div>
+                    <h4 class="text-xl font-bold mb-3">밴드반</h4>
+                    <p class="text-sm opacity-70 mb-6">버스킹 및 밴드 준비<br>앙상블 테크닉 트레이닝</p>
+                    <button onclick="location.href='#contact'" class="text-amber-800 font-bold">문의하기 <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <!-- 원포인트 -->
+                <div class="card p-8">
+                    <div class="text-4xl mb-4 text-amber-800"><i class="fas fa-star"></i></div>
+                    <h4 class="text-xl font-bold mb-3">원포인트 레슨</h4>
+                    <p class="text-sm opacity-70 mb-6">특정 테크닉 강화 특강<br>단기간 최적화 특강</p>
+                    <button onclick="location.href='#contact'" class="text-amber-800 font-bold">문의하기 <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+            <p class="mt-12 text-[#4E342E] font-medium italic">
+                "수강생의 레벨과 목표에 맞춰 수강료가 책정됩니다. 지금 문의하여 10% 할인 견적을 확인하세요!"
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. Facility & Experience Section -->
+    <section id="facility" class="section-padding max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h3 class="text-4xl font-bold mb-4">Premium Facility</h3>
+            <p class="opacity-70">연주에만 집중할 수 있는 쾌적하고 전문적인 환경의 레슨실과 연습실</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="h-64 bg-beige-200 rounded-lg overflow-hidden group">
+                <img src="https://img.kr.gcp-karroter.net/business-profile/bizPlatform/profile/30540534/1756696988132/NWh4bVNTb2RuSXJlbTlTWnlJNGtD.jpeg?q=95&s=1440x1440&t=inside" class="w-full h-full object-cover group-hover:scale-11- transition duration-500">
+            </div>
+            <div class="h-64 bg-beige-200 rounded-lg overflow-hidden group">
+                <img src="https://img.kr.gcp-karroter.net/local_business_ugc/local_business_ugc/undefined/3297692/1771853430544/Njk0ZTVmOTNiMjVlZGY1YTI4OGRlNDgxNjQ1YTVhMGExMzY1NDQ4MjNhZGIzMmFiZmZjODdiNGNjNTAwNzI2MF8xLmpwZWc=.jpeg" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="h-64 bg-beige-200 rounded-lg overflow-hidden group">
+                <div class="p-8 flex flex-col justify-center h-full bg-[#4E342E] text-white">
+                    <p class="font-bold">✓ 컴팩트, 고퀄리티의 레코딩 시스템 완비</p>
+                    <p class="font-bold">✓ 개인 연습실 사용 가능</p>
+                    <p class="font-bold">✓ 개별 냉난방 & 쾌적한 시설</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section (Inquiry Form) -->
+    <section id="contact" class="section-padding bg-[#4E342E] text-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+            <div>
+                <h3 class="text-4xl font-bold mb-8 italic">First Beat Event!</h3>
+                <p class="text-xl mb-6 opacity-80">지금 상담 및 등록 시<br><strong class="text-amber-400">신규 등록 10% 할인 혜택</strong>과 <strong class="text-amber-400">드럼 스틱</strong>을 증정합니다.</p>
+                <div class="space-y-4">
+                    <p><i class="fas fa-map-marker-alt mr-3 text-amber-400"></i> 부산광역시 동래구 중앙대로 1291-1 상주빌딩 5층</p>
+                    <p><i class="fas fa-phone mr-3 text-amber-400"></i> 010-3474-6086</p>
+                    <p><i class="fas fa-envelope mr-3 text-amber-400"></i> jcatharsis@gmail.com</p>
+<a href="https://open.kakao.com/o/st0Tf5sg" class="text-2xl hover:text-amber-800"><i class="fas fa-comment"></i> 카카오톡 바로 문의 </a>
+                </div>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer class="bg-[#F5F5DC] py-10 text-center border-t">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://open.kakao.com/o/st0Tf5sg" class="text-2xl hover:text-amber-800"><i class="fas fa-comment"></i></a>
+            <a href="https://blog.naver.com/dannydrumstudio" class="text-2xl hover:text-amber-800"><i class="fas fa-blog"></i></a>
+<a href="http://www.youtube.com/@dan1stdmr" class="text-3xl text-red-600 hover:scale-110 transition"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/dan1stdmr" class="text-3xl text-pink-600 hover:scale-110 transition"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-sm opacity-60">© 2024 Danny Drum Studio. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
